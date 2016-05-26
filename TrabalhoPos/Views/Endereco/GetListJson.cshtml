@@ -1,0 +1,9 @@
+﻿@model IEnumerable<TrabalhoPos.Models.Endereco>
+
+
+@using (Html.BeginForm()) 
+{
+	@Html.TextArea("code", new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(Model).ToString(), new { rows="20", cols="120", id="code", style="margin-top: 20px"})	
+}
+
+
